@@ -54,14 +54,16 @@
     </div>
 
     <div class="div4 flex-container2">
-        <div class="cont1">
-            <div class="conti1">
-                <h6 class="hh8 titl">1. Create Profile</h6>
+        <div class="cont1 ">
+            <div class="conti1 titl1">
+                <div class="fle-imgs"><img src="./assets/img/vs_profile.png" alt=""></div>
+                <h6 class="hh8 ">1. Create Profile</h6>
                 <p class="hh9">Place your name and details 
                     into our system for us to keep 
                     a record of your dance.</p>
             </div>
             <div class="conti2">
+                <div class="fle-imgs"><img src="./assets/img/noto_alien.png" alt=""></div>
                 <h6 class="hh8">2. Create an Avatar</h6>
                 <p class="hh9">Create a unique avatar to use 
                     in all your dances, be it to just 
@@ -69,6 +71,7 @@
                     keeps.</p>
             </div>
             <div class="conti3">
+                <div class="fle-imgs"><img src="./assets/img/uil_create-dashboard.png" alt=""></div>
                 <h6 class="hh8">3. Create Scenes</h6>
                 <p class="hh9">You can create the places you find 
                     yourself dancing in, every scene 
@@ -78,23 +81,26 @@
         </div>
 
         <div class="cont2">
-            <img src="./assets/img/Feed (1).svg" width="90%" alt="">
+            <img src="./assets/img/Feed (1).png" width="90%" alt="">
         </div>
 
         <div class="cont3">
-            <div class="contin1">
-                <h6 class="hh10 titl">4. Select Music</h6>
+            <div class="contin1 titl2">
+                <div class="fle-imgs"><img src="./assets/img/music.png" alt=""></div>
+                <h6 class="hh10 ">4. Select Music</h6>
                 <p class="hh11">With over 200 songs, search 
                     for the one that keeps singing in your 
                     head. Feel free to download more</p>
             </div>
             <div class="contin2">
+                <div class="fle-imgs"><img src="./assets/img/Group 3355.png" alt=""></div>
                 <h6 class="hh10">5. Dance Dance Dance</h6>
                 <p class="hh11">Now, you can create the 
                     magical dance in your head, go on dance 
                     battles and Just have fun.</p>
             </div>
             <div class="contin3">
+                <div class="fle-imgs"><img src="./assets/img/share.png" alt=""></div>
                 <h6 class="hh10">6. Share your creations</h6>
                 <p class="hh11">Show off your masterpiece amongst 
                     your peers. Let them see that you can also rock 
@@ -115,30 +121,44 @@
 
     
     <div class="containerr">
-        <div class="glide">
-            <div class="glide__track" data-glide-el="track">
+        <div class="glide containerr2" >
+            
+            <div class="glide__track" data-glide-el="track" >
               <ul class="glide__slides">
-                <li class="glide__slide"><img src="./assets/img/Intro screen.svg" alt=""></li>
-                <li class="glide__slide"><img src="./assets/img/Feed (1).svg" alt=""></li>
-                <li class="glide__slide"><img src="./assets/img/Profile (1).svg" alt=""></li>
-                <li class="glide__slide"><img src="./assets/img/Notification (1).svg" alt=""></li>
-                <li class="glide__slide"><img src="./assets/img/Avatar (1).svg" alt=""></li>
-                <li class="glide__slide"><img src="./assets/img/Battle.svg" alt=""></li>
+                <li class="glide__slide"><img class="slider-imgs" src="./assets/img/Intro screen.png" alt=""></li>
+                <li class="glide__slide"><img class="slider-imgs" src="./assets/img/Feed (1).png" alt=""></li>
+                <li class="glide__slide"><img class="slider-imgs" src="./assets/img/Profile (1).png" alt=""></li>
+                <li class="glide__slide"><img class="slider-imgs" src="./assets/img/Notification (1).png" alt=""></li>
+                <li class="glide__slide"><img class="slider-imgs" src="./assets/img/Avatar (1).png" alt=""></li>
+                <li class="glide__slide"><img class="slider-imgs" src="./assets/img/Battle.png" alt=""></li>
               </ul>
             </div>
-            <div class="glide__arrows" data-glide-el="controls">
-                <button class="glide__arrow glide__arrow--left" data-glide-dir="<">prev</button>
-                <button class="glide__arrow glide__arrow--right" data-glide-dir=">">next</button>
+            <br><br> 
+            <div class="glide__bullets" data-glide-el="controls[nav]" >
+                <button class="glide__bullet" data-glide-dir="=0"></button>
+                <button class="glide__bullet" data-glide-dir="=1"></button>
+                <button class="glide__bullet" data-glide-dir="=2"></button>
+                <button class="glide__bullet" data-glide-dir="=3"></button>
+                <button class="glide__bullet" data-glide-dir="=4"></button>
+                <button class="glide__bullet" data-glide-dir="=5"></button>
             </div>
         </div>
     </div>
 
 
     <script src="node_modules/@glidejs/glide/dist/glide.min.js"></script>
-    <script>
-    new Glide('.glide').mount()
-    </script>
     <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+    <script>
+        
+        const config = {
+            type: "carousel",
+            perView: 1,
+            autoplay: 4500,
+            hoverpause: true
+        }
+        new Glide('.glide',config).mount();
+
+    </script>
     <script src="./assets/js/danstar.js"></script>
 </body>
 </html>
