@@ -26,24 +26,28 @@ body{
 .hh2{
     font-family: 'PT Serif', serif;
     font-style: normal;
-    font-weight: bold;
+    font-weight: medium;
     font-size: 1rem;
     line-height: 1.3125rem;
     text-align: center;
-    
+    letter-spacing: 1.5px;
     margin-top: -1rem;
     color: #FFFFFF;
+    padding-left: 3%;
+    padding-right: 3%;
 }
 
 .hh3{
     font-family: PT Serif;
     font-style: normal;
-    font-weight: bold;
+    font-weight: medium;
     font-size: 1rem;
     line-height: 1.3125rem;
-
+    letter-spacing: 1.5px;
     text-align: center;
     color: #FFFFFF;
+    padding-left: 3%;
+    padding-right: 3%;
 }
 .hero2{
     background-image: url("../img/building.svg");
@@ -78,7 +82,10 @@ body{
     }
 }
 .div2{
-    padding-left: 28%;
+    /* padding-left: 28%; */
+    width: 80%;
+    text-align: center;
+    padding-left: 8%;
 }
 .hh4{
     font-family: PT Serif;
@@ -105,6 +112,7 @@ body{
     color: #050307;
     outline: none;
     border: none;
+    padding-left: 30px;
 }
 .butt{
     background: #FCEE21;
@@ -121,12 +129,13 @@ body{
     /* identical to box height */
     color: #050307;
 }
-.butt:active{
-    background-color: #050307;
-    color: #FCEE21;
-}
 .butt:hover{
-    opacity: 0.6;
+    background: #d8cb1c;
+    cursor: pointer;
+}
+.butt:active{
+    background-color: #FCEE21;
+    color: #050307;
 }
 .hh5{
     font-family: PT Serif;
@@ -139,7 +148,12 @@ body{
 }
 @media only screen and (max-width: 800px) {
     .div2{
-        padding-left: 14%;
+        padding-left: 0%;
+        margin: auto;
+    }
+    .emai{
+        width: 80%;
+        margin-bottom: 10px;
     }
 }
 
@@ -320,6 +334,10 @@ body{
     text-align: center;
     width: 100%;
     height: auto;
+    background-image: url("../img/Ellipse\ 71.png"), url("../img/Ellipse\ 75.png");
+    background-position: top right, bottom left;
+    background-repeat: no-repeat, no-repeat;
+    padding-bottom: 70px;
 }
 .containerr2{
     width: 50%;
@@ -338,6 +356,133 @@ body{
     }
     
 }
+
+
+
+/* Contact Us Form */
+.div6{
+    background-color: #0B0016;
+    padding-left: 9.1%;
+    padding-right: 9.1%;
+    padding-top: 30px;
+    
+}
+.hh14{
+    font-family: Lobster;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 3.125rem;
+    line-height: 62px;
+    
+    color: #0898E7;
+}
+.hh15{
+    font-family: PT Serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.375rem;
+    line-height: 30px;
+    max-width: 595px;
+    color: #FFFFFF;
+    margin-bottom: 40px;
+    margin-top: -40px;
+}
+
+.form1 > label{
+    font-family: PT Serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.25rem;
+    line-height: 40px;
+
+    color: #FFFFFF;
+}
+.form1 > input{
+    width: 100%;
+    background: #FFFFFF;
+    border: 1px solid #AEAEAE;
+    box-sizing: border-box;
+    border-radius: 5px;
+    height: 51.11px;
+    margin-bottom: 10px;
+    padding-left: 30px;
+    outline: none;
+    font-family: PT Serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.25rem;
+    line-height: 32px;
+}
+#message{
+    height: 300px;
+    width: 100%;
+    background: #FFFFFF;
+    border: 1px solid #AEAEAE;
+    box-sizing: border-box;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    padding-left: 30px;
+    outline: none;
+    font-family: PT Serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.25rem;
+    line-height: 32px;
+}
+.form1 > div{
+    text-align: right;
+}
+.form1 > div > button{
+    width: 191px;
+    height: 40px;
+    outline: none;
+    border: none;
+    background: #FCEE21;
+    border-radius: 5px;
+    font-family: PT Serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 32px;
+    color: #050307;
+    margin-top: 18px;
+    margin-bottom: 60px;
+}
+.form1 > div > button:hover{
+    background: #d8cb1c;
+    cursor: pointer;
+
+}
+.form1 > div > button:active{
+    background: #FCEE21;
+    color: #050307;
+}
+.div7{
+    text-align: center;
+}
+.div7img{
+    padding-left: 20px;
+}
+.div7imgg{
+    padding-left: 2px;
+}
+.hh16{
+    font-family: PT Serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+    /* identical to box height */
+
+    text-align: center;
+
+    color: #99A0AA;
+
+    text-align: center;
+    padding-bottom: 40px;
+    margin-bottom: -20px;
+}
+
 
 .scale-up-center {
 	-webkit-animation: scale-up-center 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) 1s both;
