@@ -2,6 +2,7 @@
 body{
     margin: 0;
     background-color: black;
+    overflow-x: hidden;
 }
 .hero{
     background-image: url("../img/hero-img.png");
