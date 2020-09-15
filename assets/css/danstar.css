@@ -64,10 +64,10 @@ body{
     justify-content: center;
 }
 .hero3{
-    background-image: url("../img/train.svg");
-    background-repeat: no-repeat;
+    background-image: url("../img/train.svg"), url("../img/Group\ 1676.png");
+    background-repeat: no-repeat, no-repeat;
     z-index: 1;
-    background-position: left bottom;
+    background-position: left bottom, right bottom;
     width: 100%;
     height: 26.875rem;
 }
@@ -255,6 +255,11 @@ body{
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
+
+    background-image: url("../img/Ellipse\ 62.png");
+    background-repeat: no-repeat;
+    background-position: bottom left;
+    background-position-x: 40%;
 }
 
 .hh8{
@@ -319,6 +324,7 @@ body{
 @media only screen and (max-width: 845px) {
     .flex-container2{
         flex-direction: column;
+        background-image: none;
     }
     .cont1{
         width: 80%;
