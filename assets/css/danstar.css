@@ -71,6 +71,33 @@ body{
     width: 100%;
     height: 26.875rem;
 }
+.hero2bg1{ background-image: url("../img/days.png"); width: 99.6px; height: 99.6px; margin-left: 43px;}
+.hero2bg2{ background-image: url("../img/hours.png"); width: 99.6px; height: 99.6px;}
+.hero2bg3{ background-image: url("../img/minutes.png"); width: 99.6px; height: 99.6px;}
+.hero2bg4{ background-image: url("../img/seconds.png"); width: 99.6px; height: 99.6px;}
+
+.hero2hh1{
+    font-family: Lobster;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 0px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.hero3hh1{
+    font-family: Lobster;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 0px;
+    text-align: center;
+    color: #FFFFFF;
+    margin-top: -17px;
+}
+
+
 @media only screen and (max-width: 550px) {
     .hero{
         height: 35.875rem;
